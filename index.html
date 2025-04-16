@@ -5,20 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>La Galáctica</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s ease-out forwards;
-    }
-
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body class="bg-gray-100 text-gray-800">
   <!-- Encabezado -->
@@ -26,16 +13,17 @@
     <div class="max-w-7xl mx-auto flex justify-between items-center">
       <h1 class="text-2xl font-bold">La Galáctica</h1>
       <nav>
-        <a href="#info" class="mx-4 hover:text-green-600">Información</a>
-        <a href="#galeria" class="mx-4 hover:text-green-600">Galería</a>
+        <a href="assets/información.html" class="mx-4 hover:text-green-600">Información</a>
+        <a href="assets/galery.html" class="mx-4 hover:text-green-600">Galería</a>
         <a href="#contacto" class="mx-4 hover:text-green-600">Contacto</a>
-        <a href="#direccion" class="mx-4 hover:text-green-600">ubicación</a>
+        <a href="#ubicacion" class="mx-4 hover:text-green-600">Ubicación</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="bg-cover bg-center h-[80vh] flex items-center justify-center text-white text-center" style="background-image: url('images_galery/Imagen\ de\ WhatsApp\ 2025-04-14\ a\ las\ 16.15.59_a0ac3cba.jpg');">
+  <section class="bg-cover bg-center h-[80vh] flex items-center justify-center text-white text-center"
+    style="background-image: url('images_galery/Imagen de WhatsApp 2025-04-14 a las 16.15.59_a0ac3cba.jpg');">
     <div class="bg-black bg-opacity-50 p-8 rounded fade-in">
       <h2 class="text-4xl font-bold mb-4">Tu descanso ideal en Salta</h2>
       <p class="text-xl">Relajate en nuestra casa de descanso acogedora y lleno de tranquilidad.</p>
@@ -56,32 +44,30 @@
       <img src="images_galery/Imagen de WhatsApp 2025-04-14 a las 16.16.00_987aeabb.jpg" class="rounded shadow-md hover:scale-105 transition-transform duration-300">
       <img src="images_galery/Imagen de WhatsApp 2025-04-14 a las 16.16.00_c5020347.jpg" class="rounded shadow-md hover:scale-105 transition-transform duration-300">
       <img src="images_galery/pexels-pixabay-33545.jpg" class="rounded shadow-md hover:scale-105 transition-transform duration-300">
-      <a href="#galeriaa">ver mas fotos</a>
+      <a href="#galeriaa" class="text-green-600 underline mt-4 block">Ver más fotos</a>
     </div>
   </section>
 
   <!-- Ubicación -->
-<section id="ubicacion" class="py-16 px-4 bg-white fade-in">
-  <div class="max-w-4xl mx-auto text-center">
-    <h3 class="text-3xl font-semibold mb-6">¿Dónde estamos?</h3>
-    <p class="text-lg mb-8">Nos encontramos en una de las zonas mas tranquilas de Salta:</p>
-    <p>La silleta Ruta 51, km 9 1/2. Villa del dique</p>
-    
-    <!-- Mapa de Google -->
-    <div class="w-full h-96 shadow-lg rounded overflow-hidden">
-      <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3619.7262094685934!2d-65.56125652462862!3d-24.873198977920993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1744658968514!5m2!1ses-419!2sar"
-        width="100%"
-        height="100%" 
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-  </div>
-</section>
+  <section id="ubicacion" class="py-16 px-4 bg-white fade-in">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold mb-6">¿Dónde estamos?</h3>
+      <p class="text-lg mb-2">Nos encontramos en una de las zonas más tranquilas de Salta:</p>
+      <p class="mb-8">La Silleta, Ruta 51, km 9 1/2. Villa del Dique</p>
 
+      <div class="w-full h-96 shadow-lg rounded overflow-hidden">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3619.7262094685934!2d-65.56125652462862!3d-24.873198977920993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1744658968514!5m2!1ses-419!2sar"
+          width="100%"
+          height="100%" 
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="text-center p-4 bg-white mt-8 shadow-inner">
